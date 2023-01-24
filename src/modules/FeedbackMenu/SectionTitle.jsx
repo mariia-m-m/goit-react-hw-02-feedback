@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from '../FeedbackMenu/feedbackMenu.module.css';
 
 const SectionTitle = ({ children, title }) => {
@@ -10,3 +11,8 @@ const SectionTitle = ({ children, title }) => {
 };
 
 export default SectionTitle;
+
+SectionTitle.propTypes = {
+  // children: PropTypes.element.isRequired,
+  title: PropTypes.string.isRequired,
+};

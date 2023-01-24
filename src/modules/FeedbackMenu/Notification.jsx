@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from '../FeedbackMenu/feedbackMenu.module.css';
 
 const Notification = ({ message, total }) => {
@@ -8,3 +9,8 @@ const Notification = ({ message, total }) => {
 };
 
 export default Notification;
+
+Notification.propTypes = {
+  message: PropTypes.string.isRequired,
+  total: PropTypes.number.isRequired,
+};
